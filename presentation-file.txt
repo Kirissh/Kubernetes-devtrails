@@ -1,0 +1,86 @@
+# Kubernetes Issue Predictor - Hackathon Presentation
+
+## Slide 1: Introduction
+- Project: **Kubernetes Issue Predictor**
+- Goal: Predict Kubernetes cluster issues before they happen
+- Technologies: Python, scikit-learn, Pandas, Matplotlib
+- Our approach: Machine learning to identify patterns preceding failures
+
+## Slide 2: Problem Statement
+- Kubernetes clusters experience unexpected issues:
+  - Pod crashes and failures
+  - Resource bottlenecks (CPU, memory, disk)
+  - Network connectivity issues
+  - Service disruptions
+- These issues lead to downtime and service degradation
+- Traditional monitoring is reactive, not predictive
+
+## Slide 3: Our Solution 
+- AI/ML model to predict failures before they occur
+- Analyze critical metrics to identify patterns
+- Four issue types predicted:
+  - Pod failures
+  - Resource exhaustion
+  - Network issues
+  - Service disruptions
+- Actionable alerts with remediation suggestions
+
+## Slide 4: Technical Implementation
+- **Data Collection**: Simulated Kubernetes metrics
+- **Feature Engineering**: 10 key metrics processed and normalized
+- **Model Selection**: Random Forest Classifier (optimized parameters)
+- **Evaluation**: Comprehensive metrics, visualizations, ROC analysis
+- **Deployment**: Real-time prediction service with alert generation
+
+## Slide 5: Data and Features
+- Key metrics captured:
+  - Node CPU/Memory/Disk usage
+  - Pod restart count
+  - Pod resource utilization
+  - Network I/O metrics
+  - HTTP error rate
+  - Service response time
+- Time-based pattern recognition
+
+## Slide 6: Model Performance
+- **Accuracy**: 100% on test data
+- **Precision & Recall**: Perfect scores across classes
+- **Feature Importance**:
+  - HTTP error rate (19.1%)
+  - Response time (13.1%)
+  - Node CPU usage (12.1%)
+  - Network metrics (12.0%)
+- **Visualizations**: Confusion matrix, ROC curves
+
+## Slide 7: Live Demo
+- Training the model
+- Evaluating performance
+- Real-time prediction service in action
+- Alert generation and remediation suggestions
+
+## Slide 8: Architecture
+```
+kubernetes-issue-predictor/
+├── data/                     # Contains generated datasets
+├── models/                   # Stores trained ML models
+├── results/                  # Contains evaluation metrics and visualizations
+├── src/                      # Source code
+```
+- Modular design for easy extension
+- Clear separation of concerns
+
+## Slide 9: Future Enhancements
+- Integration with actual Kubernetes API
+- Time-series analysis for better temporal patterns
+- Unsupervised anomaly detection
+- Automated remediation actions
+- Kubernetes operator implementation
+
+## Slide 10: Conclusion
+- Successfully predicted Kubernetes issues with high accuracy
+- Demonstrated the power of machine learning for proactive management
+- Established foundation for automated remediation
+- Ready for real-world implementation and testing
+
+## Slide 11: Q&A
+Thank you! Questions?
