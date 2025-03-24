@@ -141,6 +141,4 @@ kubectl apply -f kubernetes/
 
 MIT License
 
-## Author
 
-Your Name 
